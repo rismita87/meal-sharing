@@ -1,20 +1,32 @@
+import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import TestComponent from "./components/TestComponent/TestComponent";
+import Home from "./components/Home";
+import Menu from "./components/Menu";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Meals from "./components/Meals";
+import MealReservation from "./components/MealReservation";
 
 function App() {
   return (
-    <Router>
-      <Route exact path="/">
-        <p>test</p>
-      </Route>
-      <Route exact path="/lol">
-        <p>lol</p>
-      </Route>
-      <Route exact path="/test-component">
-        <TestComponent></TestComponent>
-      </Route>
-    </Router>
+    <div>
+      <div className="header">
+        <Menu />
+        <Header />
+      </div>
+
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/meals/:id" component={MealReservation} />
+        <Route exact path="/meals" component={Meals} />
+        <Route exact path="/test-component" component={TestComponent} />
+      </Switch>
+      <div>
+        <Footer />
+      </div>
+    </div>
   );
 }
 
