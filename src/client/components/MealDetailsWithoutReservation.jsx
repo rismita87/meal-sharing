@@ -6,7 +6,7 @@ export default function MealDetailsWithoutReservation(params) {
   const [mealDetails, setMealDetails] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/meals/" + params.id)
+    fetch("/api/meals/" + params.id)
       .then((res) => res.json())
       .then(
         (data) => {

@@ -33,13 +33,13 @@ export default function MealList(props) {
         contact_email: email,
       }),
     };
-    fetch("http://localhost:5000/api/reservations", requestOptions)
+    fetch("/api/reservations", requestOptions)
       .then((response) => response.json())
       .then((data) => setReservationUpdateResponse(data));
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/reservations")
+    fetch("/api/reservations")
       .then((res) => res.json())
       .then(
         (data) => {

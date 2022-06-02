@@ -31,7 +31,7 @@ export default function Meals() {
         created_date: createDate,
       }),
     };
-    fetch("http://localhost:5000/api/meals", requestOptions)
+    fetch("/api/meals", requestOptions)
       .then((response) => response.json())
       .then((data) => {
         setMealAddResponse(data);
@@ -39,7 +39,7 @@ export default function Meals() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/meals")
+    fetch("/api/meals")
       .then((res) => res.json())
       .then(
         (data) => {
