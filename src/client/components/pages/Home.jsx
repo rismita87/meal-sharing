@@ -9,7 +9,7 @@ export default function AllMeals() {
   const [allMeals, setAllMeals] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/meals")
+    fetch("/api/meals")
       .then((res) => res.json())
       .then(
         (data) => {
