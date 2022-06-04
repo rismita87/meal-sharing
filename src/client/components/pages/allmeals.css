@@ -1,0 +1,4 @@
+.mealListContainer {
+  display: flex;
+  flex-direction: column;
+}
