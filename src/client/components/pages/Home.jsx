@@ -1,13 +1,15 @@
 import React from "react";
-import MealList from "./MealList";
 import { useEffect, useState } from "react";
-export default function Home() {
+import MealListContainer from "./MealListConatiner";
+import "./allmeals.css";
+
+export default function AllMeals() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [allMeals, setAllMeals] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/meals")
+    fetch("/api/meals")
       .then((res) => res.json())
       .then(
         (data) => {
@@ -27,6 +29,18 @@ export default function Home() {
     return <div>Loading...</div>;
   }
   if (allMeals) {
-    return <MealList allMeals={allMeals} />;
+    return (
+      <div>
+        <div className="TopMealHeader">
+          <h2>Top Rated Meals</h2>
+        </div>
+        <div>
+          <MealListContainer
+            allMeals={allMeals}
+            className="mealListContainer"
+          />
+        </div>
+      </div>
+    );
   }
 }

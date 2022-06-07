@@ -31,6 +31,13 @@ function Menu(props) {
           className="linkMenu"
           onClick={() => pushToRoute("/meals")}
         >
+          Meals
+        </Link>
+        <Link
+          to="/newmeal"
+          className="linkMenu"
+          onClick={() => pushToRoute("/newmeal")}
+        >
           NewMeal
         </Link>
       </div>

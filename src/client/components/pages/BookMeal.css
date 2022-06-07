@@ -1,0 +1,71 @@
+.MealDetailsWhole {
+  padding-left: 2%;
+}
+.title {
+  color: #094040;
+}
+.description p {
+  color: #094040;
+  font-weight: 500;
+}
+.image {
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-right: 20px;
+}
+
+.MealBox {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+.bookform {
+  overflow: auto;
+}
+
+.inputInMeal {
+  display: flex;
+  align-items: flex-end;
+}
+
+.BookFormInput,
+.ReviewFormInput {
+  width: 35%;
+  margin-bottom: 2%;
+  margin-right: 5%;
+}
+
+@media (max-width: 900px) {
+  .MealBox {
+    display: block;
+    align-items: center;
+  }
+  .inputInMeal {
+    display: block;
+    align-items: center;
+  }
+  .BookFormInput,
+  .ReviewFormInput {
+    width: 70%;
+  }
+  .MealDetailsWhole {
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .BookFormInput,
+  .ReviewFormInput {
+    width: 70%;
+  }
+  .MealDetailsWhole {
+    padding-left: 10%;
+  }
+}
+@media (max-width: 412px) {
+  .BookFormInput,
+  .ReviewFormInput {
+    width: 100%;
+  }
+}

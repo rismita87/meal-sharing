@@ -1,5 +1,5 @@
 import React from "react";
-import "./Styles/button.css";
+import ".././Styles/button.css";
 export default function ReserveButton(param) {
   return (
     <button

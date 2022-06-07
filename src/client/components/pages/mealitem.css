@@ -1,0 +1,119 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+.item {
+  width: 25%;
+  height: 300px;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  box-shadow: 11px 14px 47px -8px rgba(0, 0, 0, 0.78);
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-out;
+  background-color: #f1f6f4;
+  color: rgb(9, 64, 64);
+}
+.item {
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+.item:hover {
+  transform: scale(0.95) translateY(-10px);
+  opacity: 0.8;
+}
+
+.itemdetails {
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  left: 0;
+  bottom: 10%;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  gap: 10px;
+}
+
+.clickButton {
+  background-color: black;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  transform: translateY(35px);
+  opacity: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.item:hover .itemdetails button {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.item:hover .itemdetails button {
+  transition: all 0.3s ease-out 0.2s;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+.mealDetail {
+  display: inline-block;
+}
+
+.mealDetail i {
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 8px;
+  vertical-align: middle;
+}
+
+.mealDetail p {
+  display: inline-block;
+  font-weight: 900;
+  vertical-align: middle;
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .item {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .item {
+    width: 44%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .item {
+    width: 63%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .item {
+    width: 80%;
+  }
+}
