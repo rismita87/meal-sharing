@@ -63,3 +63,9 @@
     padding-left: 10%;
   }
 }
+@media (max-width: 412px) {
+  .BookFormInput,
+  .ReviewFormInput {
+    width: 100%;
+  }
+}
