@@ -27,16 +27,16 @@ function Menu(props) {
           Home
         </Link>
         <Link
-          to="/allmeals"
-          className="linkMenu"
-          onClick={() => pushToRoute("/allmeals")}
-        >
-          All Meals
-        </Link>
-        <Link
           to="/meals"
           className="linkMenu"
           onClick={() => pushToRoute("/meals")}
+        >
+          Meals
+        </Link>
+        <Link
+          to="/newmeal"
+          className="linkMenu"
+          onClick={() => pushToRoute("/newmeal")}
         >
           NewMeal
         </Link>

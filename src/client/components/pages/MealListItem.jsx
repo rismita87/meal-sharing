@@ -1,11 +1,10 @@
 import React from "react";
 import "./item.css";
-//import mealimg from "../resource/meal1.jpg";
 import Image from "./Image";
 
 export default function MealListItem(props) {
   const imageLoc = "meal" + props.meal.id + ".jpg";
-  console.log(imageLoc);
+
   return (
     <div className="dish">
       <Image name={imageLoc} />

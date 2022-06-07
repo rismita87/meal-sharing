@@ -1,7 +1,7 @@
 .Logo {
   display: block;
   height: 120px;
-  margin-left: 42%;
+  margin-left: 41%;
   margin-top: 15px;
   /*vertical-align: top;*/
   text-align: center;
@@ -9,7 +9,7 @@
 .HeaderDiv {
   display: block;
   width: 100%;
-  height: 150px;
+  height: 170px;
   background: rgb(5, 77, 48);
   overflow: unset;
   text-align: center;
@@ -21,5 +21,9 @@
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
+  }
+
+  .Logo {
+    margin-left: 41%;
   }
 }

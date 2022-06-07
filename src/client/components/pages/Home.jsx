@@ -29,10 +29,17 @@ export default function AllMeals() {
     return <div>Loading...</div>;
   }
   if (allMeals) {
-    //console.log("lksdncjncd " + JSON.stringify(allMeals));
     return (
       <div>
-        <MealListContainer allMeals={allMeals} className="mealListContainer" />
+        <div className="TopMealHeader">
+          <h2>Top Rated Meals</h2>
+        </div>
+        <div>
+          <MealListContainer
+            allMeals={allMeals}
+            className="mealListContainer"
+          />
+        </div>
       </div>
     );
   }

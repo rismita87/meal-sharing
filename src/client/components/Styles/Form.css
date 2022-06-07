@@ -1,0 +1,73 @@
+.InputFormHeading {
+  text-align: center;
+  margin-bottom: 50px;
+  color: rgb(9, 61, 61);
+}
+.InputForm {
+  height: auto;
+  min-height: 53vh;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.Form {
+  background-color: rgb(241, 246, 244);
+  margin: 5% 20% 30% 25%;
+  padding: 5% 5%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(124, 124, 124);
+}
+
+.mealBookForm,
+.addReviewForm {
+  background-color: rgb(241, 246, 244);
+  padding-left: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(124, 124, 124);
+}
+
+.InputFormItem {
+  margin-bottom: 15px;
+  display: block;
+}
+.InputLabel .InputDiv {
+  display: block;
+}
+
+.InputDiv {
+  width: 250px;
+  height: 30px;
+  border: 1px solid rgb(240, 239, 239);
+}
+
+.InputWholeForm,
+.mealAddButton {
+  margin-top: 10px;
+  padding-top: 2px;
+  padding-left: 5px;
+  color: azure;
+  font-weight: bolder;
+  height: 100px;
+}
+.mealAddButton,
+.reviewAddButton,
+.bookReservationButton {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.MealAddResponse {
+  margin-top: 2px;
+  height: 50px;
+  overflow: auto;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1200px) {
+  .Form {
+    margin: 0% 20% 30% 10%;
+  }
+  .InputDiv {
+    width: 250px;
+  }
+}
