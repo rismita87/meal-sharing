@@ -68,6 +68,12 @@
     margin: 0% 20% 30% 10%;
   }
   .InputDiv {
-    width: 250px;
+    width: 230px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Form {
+    margin: 0% 5% 2% 0%;
+    width: 100%;
   }
 }
