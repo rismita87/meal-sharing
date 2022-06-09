@@ -7,6 +7,7 @@ const issues = { dateIssue: "", idIssue: "" };
 router.get("/", allReservations);
 async function allReservations(request, response) {
   const allReservations = await knex("reservation").select("*");
+  console.log(allReservations);
   response.json(allReservations);
 }
 
@@ -18,6 +19,7 @@ async function addNewReservation(request, response) {
       dateIsValid(request.body.created_date) &&
       (await mealExists(request.body.meal_id))
     ) {
+      console.log("===" + request.body);
       const newReservation = await knex("reservation").insert(request.body);
       response.json("Reservation added");
     } else {
@@ -104,15 +106,13 @@ async function mealExists(mealid) {
   }
 }
 function dateIsValid(dateStr) {
-  const regex = /^\d{4}-\d{2}-\d{2}$/;
+  const regex = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/;
   issues.dateIssue = "";
   if (dateStr.match(regex) === null) {
     issues.dateIssue =
       "Date Not in correct format, supported date format is yyyy-mm-dd";
     return false;
+  } else {
+    return true;
   }
-
-  const date = new Date(dateStr);
-
-  return date.toISOString().startsWith(dateStr);
 }

@@ -1,0 +1,22 @@
+.dishes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+  padding: 0% 10%;
+  margin-bottom: 20px;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+  padding: 0% 10%;
+  margin-bottom: 20px;
+}
