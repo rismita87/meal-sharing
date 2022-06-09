@@ -29,13 +29,18 @@ export default function Footer() {
         <div>
           <i className="fa fa-map-marker"></i>
           <p>
-            <span>Park Alle 100</span> 8000, Århus
+            <a href="https://goo.gl/maps/yJnXr2ojSoFuNHm89">
+              {" "}
+              <span>Park Alle 100</span> 8000, Århus
+            </a>
           </p>
         </div>
 
         <div>
           <i className="fa fa-phone"></i>
-          <p>+45 12345678</p>
+          <p>
+            <a href="tel:4512345678">+45 12345678</a>
+          </p>
         </div>
 
         <div>
@@ -55,16 +60,16 @@ export default function Footer() {
         </p>
 
         <div className="footer-icons">
-          <a href="#">
+          <a href="https://www.facebook.com">
             <i className="fa fa-facebook"></i>
           </a>
-          <a href="#">
+          <a href="https://twitter.com">
             <i className="fa fa-twitter"></i>
           </a>
-          <a href="#">
+          <a href="https://linkedin.com">
             <i className="fa fa-linkedin"></i>
           </a>
-          <a href="#">
+          <a href="https://github.com">
             <i className="fa fa-github"></i>
           </a>
         </div>

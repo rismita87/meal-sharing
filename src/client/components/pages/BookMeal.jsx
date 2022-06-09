@@ -40,7 +40,7 @@ export default function BookMeal() {
       <div className="MealDetailsWhole">
         <div className="MealBox">
           <div className="image">
-            <img src="https://via.placeholder.com/400x400" />
+            <img src="https://via.placeholder.com/320x400" />
           </div>
           <div>
             <div className="title">

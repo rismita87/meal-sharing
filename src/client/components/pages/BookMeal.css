@@ -52,6 +52,10 @@
   .MealDetailsWhole {
     padding-left: 20%;
   }
+  .image {
+    margin-right: 0px;
+    width: 80%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -61,6 +65,9 @@
   }
   .MealDetailsWhole {
     padding-left: 10%;
+  }
+  .image {
+    margin-right: 0px;
   }
 }
 @media (max-width: 412px) {
